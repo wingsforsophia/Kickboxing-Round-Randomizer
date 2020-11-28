@@ -122,7 +122,7 @@ const round4 = {
                'J, BC, C, LFK, LFK',
                'J, JC, LH, RRH, RRH',
                'LFK, C, LH, RRH, LRH',
-               'LRH, lab cross jab RH,LRH',
+               'LRH, jab cross jab RH,LRH',
                'RRH, LH , RH, LUC, RFK',
                'RFK, C, LUC, LH, RFK',
                'J, RH,C,LSK,RFK',
@@ -144,10 +144,58 @@ const round4 = {
                'body C, LHH, RHH, LRH, LRH ',
                ' RRH, LH, RH, LUC, RFK ',
                'RFK, LSK, RHH, LHH',
-               
-
-
+               'RBH, LUC, RFK, RSK ',
+               'RUC, LH, C, LRH, RFK ',
+               'RFK, LRH, Body J, RH, LHH '
     ]
+}
+
+const round5 = {
+    'punches': ['Jab', 'Cross', 'Body-Cross', 'Body-Jab', 'Left-Hook', 'Right-Hook', 'Left-Body-Hook', 'Right-Body-Hook', 'Right-Head-Hook', 'Left-Head-Hook','Left-Uppercut', 'Right-Uppercut', 'Superman'],
+    'combos': ['RH, RUC, LRH, RFK, LRH',
+               'C, LFK, C, LH, RFK',
+               'RRH, LSK, JCJ, RBH',
+               'LUC, RUC, LUC, RUC, LFK, RFK, LRH (halfway through, change those to hooks)',
+               'RRH,LFK,LU, cross, LRH',
+               'C, LFK, C, RUC, LFK, RRH',
+               'RUC, LBH, C, LRH, LSBF',
+               'jab-cross, LH,RRH,LSK',
+               'RBH, LHH, RFK, squat, LFK, squat, RFK, squat',
+               'RUC, LUC, C, LRH, RRH',
+               'RRH, LRH, LFK, C, LHH',
+               'C, LFK, RRH, J, RRH',
+               ' LH, RH, J, RUC, LRH, LRH',
+               'J, RUC, LRH, RRH, RRH',
+               'LBH RRH, LFK,RFK, superman ',
+               'JC, C, LRH',
+               'C, LFK, C, RH, LFK, RRH',
+               'J,RRH, LH, Ru, LFK ',
+               'RRH,J,C,LH,C,LRH ',
+               'J, C, RU,low LRH, middle LRH',
+               'C, LUC, RH, LRH, LSBF ',
+               'LH, RRH, RFK, LFK ',
+               ' LH, C, J, RRH, RRH, LFK, LFK',
+               'C, LH, RRH, LUC, C ',
+               'LH, RH, LFK, RH, LH, RFK ',
+               'C, LFK, C, LH, RRH',
+               'C, LUC, RHH, LRH ',
+               'Body-Jab, RUC, LUC, RSK, LRH, RFK ',
+               'LUC, RH, LRH, RFK, Superman ',
+               'LRH, LSBF, C, LBH ',
+               'RRH, LUC, RUC, LUC, RUC, LRH ',
+               'J, C, LH, RRH, RFK ',
+               'LUC, RUC, LUC, RUC, LFK, RFK, LRH halfway through, change Uppercuts to Hooks',
+               'J, C, C, LFK, RRH ',
+               'J, C, C, LRH ',
+               'LUC, RH, LFK, RRH, LRH ',
+               ' LSK, RRH, J, C, LH ',
+               ' LUC, RUC, LRH, RRH halfway through, double up on Uppercuts',
+               'BC, RUC, LH, RRH, LFK '
+    ]
+}
+
+const round6 = {
+    'punches': ['Jab', 'Cross', 'Body-Cross', 'Body-Jab', 'Left-Hook', 'Right-Hook', 'Left-Body-Hook', 'Right-Body-Hook', 'Right-Head-Hook', 'Left-Head-Hook','Left-Uppercut', 'Right-Uppercut', 'Superman'],
 
 }
 
