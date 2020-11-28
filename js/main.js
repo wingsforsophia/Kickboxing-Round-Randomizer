@@ -10,24 +10,30 @@ const round1 = {
                 'Jab-Cross-Body Cross',
                 'Body Jab-Jab-Cross',
                 'Jab-Cross-Jab-Cross, reset',
-                '']
+                'Jab-Cross, up to 6 then reset',
+                'Cross-Jab-Cross',
+                'Jab-Cross, reset, then Jab-Cross Jab-Cross',
+                'Jab-Cross-Jab',
+                'Jab-Jab-Cross 5x then 2 burpees',
+                'Jab-Cross 10x power, then 10x speed',
+                'Jab-Cross 10, 20...50, 2 burpees, then regular Jab-Cross',
+                'Jab,Cross, Jab-Cross, then Jab,Jab,Cross,Cross, then Jab-Cross-Jab-Cross, up to 5 individual, then 10 jumping jacks']
 }
 
-const currentRound1 = []
-
-console.log(currentRound1)
 
 
 
 // CACHED ELEMENT REFERENCES-----------------------------------------------------------
-const r1PrintHere = document.getElementById('round1Results')
-const generateRound1Results = document.getElementById('generateRound1Results')
+const r1FirstPrintHere = document.getElementById('round1FirstResults')
+const r1SecondPrintHere = document.getElementById('round1SecondResults')
+const generateRound1FirstResults = document.getElementById('generateRound1FirstResults')
 
 
 // EVENT LISTENERS--------------------------------------------------------------------------
 
 
-generateRound1Results.addEventListener('click', renderRound1)
+generateRound1FirstResults.addEventListener('click', renderRound1First)
+generateRound1SecondResults.addEventListener('click', renderRound1Second)
 
 
 
@@ -38,26 +44,17 @@ function randomizeRound(round){
    return Math.floor(Math.random() * Math.floor(round.combos.length))  
 }
 
-// function checkRound1(){
-//     let x = round1.combos.randomizeRound1()
-//     let y = round1.combos.randomizeRound1()
-//     if (x = y){
-//         round1.combos.randomizeRound1()
-//     } else {
-//         return y
-//     }
-// }
-
-
 
 
 
 // render functions------
 
-function renderRound1(){
-    r1PrintHere.innerHTML = `The first round is ${round1.combos[randomizeRound(round1)]} for half, then ${round1.combos[randomizeRound(round1)]}.`
+function renderRound1First(){
+    r1FirstPrintHere.innerHTML = `The first part of Round One is ${round1.combos[randomizeRound(round1)]}.`
 }
-
+function renderRound1Second(){
+    r1SecondPrintHere.innerHTML = `The second part of Round One is ${round1.combos[randomizeRound(round1)]}.`
+}
 
 
 

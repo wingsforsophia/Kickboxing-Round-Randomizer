@@ -6,3 +6,7 @@ body {
     text-align: center;
     font-size: 25px;
 }
+
+.renderRound {
+    display: flex;
+}
