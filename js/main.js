@@ -104,11 +104,52 @@ const round3 = {
                'J, RUC, LH, RSK ',
                'J, RH, LSK, LFK',
                'RRH, LUC, RH, LUC, RRH',
-               'C, LUC, RHH, LFK, RFK '
-
-]
+               'C, LUC, RHH, LFK, RFK ']
 }
+const round4 = {
+    'punches': ['Jab', 'Cross', 'Body-Cross', 'Body-Jab', 'Left-Hook', 'Right-Hook', 'Left-Body-Hook', 'Right-Body-Hook', 'Right-Head-Hook', 'Left-Head-Hook','Left-Uppercut', 'Right-Uppercut', 'Superman'],
+    'combos': ['RRH (roundhouse), RSBF (spinning back fist), JC, LH',
+               'J, RUC, LH, RRH, LFK, RRH',
+               'JC, LH, RFK, L spinning back',
+               'LRH, RFK, J, RUC, LH ',
+               'cross, LH,RH, LRH',
+               'RFK, C, LUC, LH, RFK',
+               'RFK, LFK, C, LHH, RBH',
+               'RFK,RSK, Jab-jab, RUC',
+               'JC, RH, LRH, LSBF ',
+               'RRH, JC, LUC, RRH',
+               ' RUC, LH, RRH, LSK',
+               'J, BC, C, LFK, LFK',
+               'J, JC, LH, RRH, RRH',
+               'LFK, C, LH, RRH, LRH',
+               'LRH, lab cross jab RH,LRH',
+               'RRH, LH , RH, LUC, RFK',
+               'RFK, C, LUC, LH, RFK',
+               'J, RH,C,LSK,RFK',
+               'RBH, J,C,LRH,RFK ',
+               'low RRH, middle RRH,LU,RU, LH ',
+               'C, LH, RUC, LFK, RFK',
+               ' LFK, J, RUC, RUC, LFK',
+               'C, LH, C, LRH, LRH, RFK',
+               'J, J, RH, LRH, RSK',
+               'J, J, RBH, RSBF, RRH ',
+               ' RFK, RH, LUC, C, LRH ',
+               'J, RUC, LH, RRH, LFK ',
+               'RRH, LFK, J, C, LBH ',
+               'LFK, J, C, LH, RRH ',
+               'RUC, J, C, LFK, RRH ',
+               'C, RUC, LH, RFK, LSK',
+               'RBH, J, LUC, RFK, LRH',
+               ' LRH, RFK, J, RUC, LH ',
+               'body C, LHH, RHH, LRH, LRH ',
+               ' RRH, LH, RH, LUC, RFK ',
+               'RFK, LSK, RHH, LHH',
+               
 
+
+    ]
+
+}
 
 // CACHED ELEMENT REFERENCES-----------------------------------------------------------
 const r1FirstPrintHere = document.getElementById('round1FirstResults')
@@ -116,11 +157,17 @@ const r1SecondPrintHere = document.getElementById('round1SecondResults')
 const r1ThirdPrintHere = document.getElementById('round1ThirdResults')
 const r2PrintHere = document.getElementById('round2Results')
 const r3PrintHere = document.getElementById('round3Results')
+const r4PrintHere = document.getElementById('round4Results')
+const r5PrintHere = document.getElementById('round5Results')
+const r6PrintHere = document.getElementById('round6Results')
 const generateRound1FirstResults = document.getElementById('generateRound1FirstResults')
 const generateRound1SecondResults = document.getElementById('generateRound1SecondResults')
 const generateRound1ThirdResults = document.getElementById('generateRound1ThirdResults')
 const generateRound2Results = document.getElementById('generateRound2Results')
 const generateRound3Results = document.getElementById('generateRound3Results')
+const generateRound4Results = document.getElementById('generateRound4Results')
+const generateRound5Results = document.getElementById('generateRound5Results')
+const generateRound6Results = document.getElementById('generateRound6Results')
 
 
 // EVENT LISTENERS--------------------------------------------------------------------------
@@ -131,7 +178,9 @@ generateRound1SecondResults.addEventListener('click', renderRound1Second)
 generateRound1ThirdResults.addEventListener('click', renderRound1Third)
 generateRound2Results.addEventListener('click', renderRound2)
 generateRound3Results.addEventListener('click', renderRound3)
-
+generateRound4Results.addEventListener('click', renderRound4)
+generateRound5Results.addEventListener('click', renderRound5)
+generateRound6Results.addEventListener('click', renderRound6)
 
 
 
@@ -162,4 +211,12 @@ function renderRound2(){
 function renderRound3(){
     r3PrintHere.innerHTML = `Round three is ${round3.combos[randomizeRound(round3)]}.`
 }
-
+function renderRound4(){
+    r4PrintHere.innerHTML = `Round four is ${round4.combos[randomizeRound(round4)]}.`
+}
+function renderRound5(){
+    r5PrintHere.innerHTML = `Round five is ${round5.combos[randomizeRound(round5)]}.`
+}
+function renderRound6(){
+    r6PrintHere.innerHTML = `Round six is ${round6.combos[randomizeRound(round6)]}.`
+}
