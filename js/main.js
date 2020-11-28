@@ -239,6 +239,42 @@ const round6 = {
 
 }
 
+const speedRound = {
+    'combos': ['10 hooks, 10 jumping jacks',
+               'hooks for half, then squats with front kicks',
+               'Front kicks and squats',
+               'Uppercuts',
+               'body hooks for half, then Uppercuts ',
+               'Freestyle',
+               '10 JC burpee',
+               '20 hooks, one burpee',
+               '2 jump squats 10 BH, then 2 jumping jacks 10 UC, ',
+               'non-stop UCs, non stop body hooks',
+               '10 hooks, 1 burpee, then 10 UC 3 jump squats',
+               ' nonstop JC, then nonstop FK',
+               '10 JC, then burpee, ',
+               'Uppercuts for half, then Hooks',
+               '20 Jab cross 2 burpees(30 sec) 20 hooks 2 froggies',
+               'high knees w JC for 30, then hooks',
+               'LFK,LSK for half, then RFK,RSK',
+               'JC,LH,RH 5 times, then 3 jump squats ',
+               'Hooks',
+               'non-stop JC with high knees ',
+               'Freestyle but double up on punches',
+               '20 JC, 20 High Knees',
+               'nonstop JC for half, then nonstop hooks ',
+               '10 JC burpee',
+               '10 BH, 10 HH ',
+               'nonstop J for half, then nonstop C ',
+               'nonstop JC for half, then alternating RRH and LRH ',
+               'Nonstop UCs for half, then alternating Front Kicks',
+               'Alternating Front Kicks',
+               'non-stop hooks, non-stop UCs',
+               'power hooks',
+               'Alternating Front Kicks, one quick, one powerful for each leg'
+    ]
+}
+
 // CACHED ELEMENT REFERENCES-----------------------------------------------------------
 const r1FirstPrintHere = document.getElementById('round1FirstResults')
 const r1SecondPrintHere = document.getElementById('round1SecondResults')
@@ -248,6 +284,7 @@ const r3PrintHere = document.getElementById('round3Results')
 const r4PrintHere = document.getElementById('round4Results')
 const r5PrintHere = document.getElementById('round5Results')
 const r6PrintHere = document.getElementById('round6Results')
+const speedRoundPrintHere = document.getElementById('speedRoundResults')
 const generateRound1FirstResults = document.getElementById('generateRound1FirstResults')
 const generateRound1SecondResults = document.getElementById('generateRound1SecondResults')
 const generateRound1ThirdResults = document.getElementById('generateRound1ThirdResults')
@@ -256,6 +293,7 @@ const generateRound3Results = document.getElementById('generateRound3Results')
 const generateRound4Results = document.getElementById('generateRound4Results')
 const generateRound5Results = document.getElementById('generateRound5Results')
 const generateRound6Results = document.getElementById('generateRound6Results')
+const generateSpeedRoundResults = document.getElementById('generateSpeedRoundResults')
 
 
 // EVENT LISTENERS--------------------------------------------------------------------------
@@ -269,6 +307,7 @@ generateRound3Results.addEventListener('click', renderRound3)
 generateRound4Results.addEventListener('click', renderRound4)
 generateRound5Results.addEventListener('click', renderRound5)
 generateRound6Results.addEventListener('click', renderRound6)
+generateSpeedRoundResults.addEventListener('click', renderSpeedRound)
 
 
 
@@ -307,4 +346,7 @@ function renderRound5(){
 }
 function renderRound6(){
     r6PrintHere.innerHTML = `Round six is ${round6.combos[randomizeRound(round6)]}.`
+}
+function renderSpeedRound(){
+    speedRoundPrintHere.innerHTML = `Speed round is ${speedRound.combos[randomizeRound(speedRound)]}.`
 }
