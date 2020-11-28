@@ -359,7 +359,6 @@ function renderAllRounds(){
     allRoundPrintHere.innerHTML = 
     `The first part of round one is ${round1.combos[randomizeRound(round1)]}. <br />
     The second part of round one is ${round1.combos[randomizeRound(round1)]}. <br />
-    The third part of round one is ${round1.combos[randomizeRound(round1)]}. <br />
     Round two is ${round2.combos[randomizeRound(round2)]}. <br />
     Round three is ${round3.combos[randomizeRound(round3)]}. <br />
     Round four is ${round4.combos[randomizeRound(round4)]}. <br />
