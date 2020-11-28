@@ -7,6 +7,14 @@ const round1 = {
 
 // CACHED ELEMENT REFERENCES-----------------------------------------------------------
 const r1PrintHere = document.getElementById('round1Results')
+const generateRound1Results = document.getElementById('generateRound1Results')
+
+
+// EVENT LISTENERS--------------------------------------------------------------------------
+
+
+generateRound1Results.addEventListener('click', renderRound1)
+
 
 
 
@@ -20,6 +28,6 @@ function renderRound1(){
     r1PrintHere.innerHTML = `The first round is ${round1.combos[randomizeRound1()]} for half, then ${round1.combos[randomizeRound1()]}.`
 }
 
-renderRound1()
+
 
 
