@@ -64,6 +64,50 @@ const round2 = {
     ]
 }
 
+const round3 = {
+    'punches': ['Jab', 'Cross', 'Body-Cross', 'Body-Jab', 'Left-Hook', 'Right-Hook', 'Left-Body-Hook', 'Right-Body-Hook', 'Right-Head-Hook', 'Left-Head-Hook','Left-Uppercut', 'Right-Uppercut', 'Superman'],
+    'combos': ['C, LBH, LFK (front kick), RFK',
+               'LRH, C, LUC, C, LRH',
+               'LFK, J, RH, LH, RSK',
+               'LUC, RH, LFK, RRH',
+               'Jab, RU,LU,RRH',
+               'JC, RH, LFK, squat, RFK',
+               'J, C,J, LH, RRH ',
+               'cross-LH, Cross,LFK,LSK',
+               'LFK, JC, LBH, RFK',
+               'LUC, C, LRH, RUC, LH',
+               'C, LUC, RH, LFK, RSK',
+               ' RFK, J, RUC, LUC, RFK',
+               'LFK, LFK, RUC, LUC, LBH',
+               ' C, LH, RH, LRH',
+               ' LU,RU,LBH,RRH,RRH',
+               'RUC, J, RRH, LFK',
+               'J, C, RU, LFK, squat, RFK, squat ',
+               'LFK, J,C, LH,RSK',
+               'LFK,C, LH,RRH',
+               'RU,J,C ,LRH',
+               'LRH, J, C, LH, RHH',
+               'RH, C, LH, RFK, RFK',
+               'LFK, RH, LHH, RFK, RFK',
+               'LSK, RH, LUC, RFK ',
+               'LUC, RH, C, LRH',
+               ' RRH, C, body jab, RUC',
+               'LHH, RFK, RHH, LFK ',
+               'LH, RUC, LFK, RFK, LSK ',
+               ' LUC, C, LFK, squat, RFK',
+               ' RFK, J, J, RH, RSBF ',
+               ' LFK, J, C, LUC, RSK',
+               ' LH, C, LFK, C, LFK ',
+               'LUC, RH, LFK, RRH ',
+               'RFK, RRH, J, C, superman ',
+               'RUC, J, RHH, LFK',
+               'J, RUC, LH, RSK ',
+               'J, RH, LSK, LFK',
+               'RRH, LUC, RH, LUC, RRH',
+               'C, LUC, RHH, LFK, RFK '
+
+]
+}
 
 
 // CACHED ELEMENT REFERENCES-----------------------------------------------------------
