@@ -26,7 +26,10 @@ const round1 = {
 // CACHED ELEMENT REFERENCES-----------------------------------------------------------
 const r1FirstPrintHere = document.getElementById('round1FirstResults')
 const r1SecondPrintHere = document.getElementById('round1SecondResults')
+const r1ThirdPrintHere = document.getElementById('round1ThirdResults')
 const generateRound1FirstResults = document.getElementById('generateRound1FirstResults')
+const generateRound1SecondResults = document.getElementById('generateRound1SecondResults')
+const generateRound1ThirdResults = document.getElementById('generateRound1ThirdResults')
 
 
 // EVENT LISTENERS--------------------------------------------------------------------------
@@ -34,6 +37,7 @@ const generateRound1FirstResults = document.getElementById('generateRound1FirstR
 
 generateRound1FirstResults.addEventListener('click', renderRound1First)
 generateRound1SecondResults.addEventListener('click', renderRound1Second)
+generateRound1ThirdResults.addEventListener('click', renderRound1Third)
 
 
 
@@ -50,10 +54,13 @@ function randomizeRound(round){
 // render functions------
 
 function renderRound1First(){
-    r1FirstPrintHere.innerHTML = `The first part of Round One is ${round1.combos[randomizeRound(round1)]}.`
+    r1FirstPrintHere.innerHTML = `The first part of round one is ${round1.combos[randomizeRound(round1)]}.`
 }
 function renderRound1Second(){
-    r1SecondPrintHere.innerHTML = `The second part of Round One is ${round1.combos[randomizeRound(round1)]}.`
+    r1SecondPrintHere.innerHTML = `The second part of round one is ${round1.combos[randomizeRound(round1)]}.`
+}
+function renderRound1Third(){
+    r1ThirdPrintHere.innerHTML = `The third part of round one is ${round1.combos[randomizeRound(round1)]}.`
 }
 
 
