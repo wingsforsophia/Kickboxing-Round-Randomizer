@@ -63,7 +63,7 @@ const round2 = {
                 'RBH, J, C, LHH '
     ]
 }
-// console.log(round2.combos)
+
 
 
 // CACHED ELEMENT REFERENCES-----------------------------------------------------------
@@ -71,10 +71,12 @@ const r1FirstPrintHere = document.getElementById('round1FirstResults')
 const r1SecondPrintHere = document.getElementById('round1SecondResults')
 const r1ThirdPrintHere = document.getElementById('round1ThirdResults')
 const r2PrintHere = document.getElementById('round2Results')
+const r3PrintHere = document.getElementById('round3Results')
 const generateRound1FirstResults = document.getElementById('generateRound1FirstResults')
 const generateRound1SecondResults = document.getElementById('generateRound1SecondResults')
 const generateRound1ThirdResults = document.getElementById('generateRound1ThirdResults')
 const generateRound2Results = document.getElementById('generateRound2Results')
+const generateRound3Results = document.getElementById('generateRound3Results')
 
 
 // EVENT LISTENERS--------------------------------------------------------------------------
@@ -84,6 +86,7 @@ generateRound1FirstResults.addEventListener('click', renderRound1First)
 generateRound1SecondResults.addEventListener('click', renderRound1Second)
 generateRound1ThirdResults.addEventListener('click', renderRound1Third)
 generateRound2Results.addEventListener('click', renderRound2)
+generateRound3Results.addEventListener('click', renderRound3)
 
 
 
@@ -112,5 +115,7 @@ function renderRound1Third(){
 function renderRound2(){
     r2PrintHere.innerHTML = `Round two is ${round2.combos[randomizeRound(round2)]}.`
 }
-
+function renderRound3(){
+    r3PrintHere.innerHTML = `Round three is ${round3.combos[randomizeRound(round3)]}.`
+}
 
