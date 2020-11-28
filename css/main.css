@@ -1,0 +1,8 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right top, #e2bfd3, #dcc0d9, #d5c1de, #ccc2e2, #c3c4e5, #bcc9ea, #b4cdee, #acd2f0, #a5daf3, #a1e3f4, #a1eaf1, #a6f1ec);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 25px;
+}
