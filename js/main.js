@@ -251,10 +251,10 @@ const speedRound = {
                '2 jump squats 10 BH, then 2 jumping jacks 10 UC, ',
                'non-stop UCs, non stop body hooks',
                '10 hooks, 1 burpee, then 10 UC 3 jump squats',
-               ' nonstop JC, then nonstop FK',
+               'Nonstop JC, then nonstop FK',
                '10 JC, then burpee, ',
                'Uppercuts for half, then Hooks',
-               '20 Jab cross 2 burpees(30 sec) 20 hooks 2 froggies',
+               '20 JC 2 burpees for half, then 20 hooks 2 froggies',
                'high knees w JC for 30, then hooks',
                'LFK,LSK for half, then RFK,RSK',
                'JC,LH,RH 5 times, then 3 jump squats ',
@@ -357,8 +357,8 @@ function renderSpeedRound(){
 function renderAllRounds(){
 
     allRoundPrintHere.innerHTML = 
-    `The first part of round one is ${round1.combos[randomizeRound(round1)]}. <br />
-    The second part of round one is ${round1.combos[randomizeRound(round1)]}. <br />
+    `The first half of round one is ${round1.combos[randomizeRound(round1)]}. <br />
+    The second half of round one is ${round1.combos[randomizeRound(round1)]}. <br />
     Round two is ${round2.combos[randomizeRound(round2)]}. <br />
     Round three is ${round3.combos[randomizeRound(round3)]}. <br />
     Round four is ${round4.combos[randomizeRound(round4)]}. <br />
