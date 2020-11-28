@@ -21,16 +21,46 @@ const round1 = {
 }
 
 const round2 = {
-    'punches': ['Jab', 'Cross', 'Body-Cross', 'Body-Jab', 'Left-Hook', 'Right-Hook', 'Left-Body-Hook', 'Right-Body-Hook', 'Left-Uppercut', 'Right-Uppercut'],
+    'punches': ['Jab', 'Cross', 'Body-Cross', 'Body-Jab', 'Left-Hook', 'Right-Hook', 'Left-Body-Hook', 'Right-Body-Hook', 'Right-Head-Hook', 'Left-Head-Hook','Left-Uppercut', 'Right-Uppercut', 'Superman'],
     'combos':  ['Jab, Left-Body-Hook, Right-Body-Hook, Left-Uppercut, Cross',
                 'Cross, Left-Hook, Body-Cross, Right-Hook',
                 'Cross, Left-Uppercut, Left-Hook, Right-Hook, Right-Spinning-Backfist',
                 'Right-Uppercut, Left-Hook, Right-Hook, Left-Uppercut',
                 'Jab, Cross, Left-Hook, Right-Hook',
-                'Cross, Right-Hook, Left-Uppercut, Left-Hook' 
-
-
-
+                'Cross, Right-Hook, Left-Uppercut, Left-Hook',
+                'Right-Uppercut, Right-Hook, Left-Hook',
+                'Jab, Right-Hook, Jab, Cross',
+                'Right-Body-Hook, Right-Head-Hook, Left-Head-Hook',
+                'Left-Uppercut, Right-Uppercut, Left-Hook, Right-Uppercut',
+                'Jab, Cross, Left-Hook, Right-Hook',
+                'Right-Hook, Jab, Cross, Superman',
+                'Right-Body-Hook, Jab, Jab, Cross',
+                'Jab, Cross, Left-Uppercut, Left-Hook',
+                'Jab, Cross, Left-Uppercut, Right-Body-Hook, Left-Head-Hook',
+                'Cross, Left-Hook, Left-Head-Hook, Cross',
+                'Cross, Right-Hook, Left-Uppercut, Left-Hook',
+                'Cross, Left-Uppercut, Left-Hook, Cross, halfway through double up',
+                'Jab, Cross, Body-Cross, Left-Hook',
+                'LU,RBodyHook, Body Jab, RU',
+                'RBH, J, C, J, C, LBH',
+                'C, LH, LUC, RH',
+                'J, LH, RH, RHH',
+                'C, LH, RUC, LH',
+                'J, C, LH, RUC ',
+                'LBH, RUC, body jab, C',
+                'C, LBH, RHH',
+                ' C, J, J, RH ',
+                'RUC, J, C, LBH',
+                'RH, LH, RH, LUC',
+                'RUC, LUC, C, LUC',
+                'J, J, C, LH ',
+                'RUC, LH, RH, LUC',
+                'C, LUC, LUC, RH',
+                ' C, LBH, LHH, C',
+                'C, LH, RH',
+                'C, LBH, RUC, RBH ',
+                ' LBH, RUC, RUC, LUC ',
+                'RBH, J, C, LHH '
     ]
 }
 // console.log(round2.combos)

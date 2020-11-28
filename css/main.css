@@ -13,11 +13,14 @@ body {
     align-items: center;
 }
 
+.printResults{
+    height: auto;
+    width: 80vw;
+}
+
 button{
     background-image: linear-gradient(to right top, #869d80, #7a9177, #6f846d, #647864, #596c5b);
     border-radius: 30px;
-    height: 55px;
-    width: 90px;
     border: none;
     -webkit-box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.49); 
     box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.49);
