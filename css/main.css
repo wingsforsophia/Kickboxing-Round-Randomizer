@@ -29,4 +29,7 @@ button{
 
 .printResults {
     margin: 30px;
+    /* background-image: linear-gradient(to right top, #f4f3ea, #f4f3e1, #f3f4d8, #f0f4cf, #edf5c7);
+    border-radius: 20px;
+    padding: 12px; */
 }

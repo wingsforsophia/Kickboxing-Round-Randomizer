@@ -285,6 +285,7 @@ const r4PrintHere = document.getElementById('round4Results')
 const r5PrintHere = document.getElementById('round5Results')
 const r6PrintHere = document.getElementById('round6Results')
 const speedRoundPrintHere = document.getElementById('speedRoundResults')
+const allRoundPrintHere = document.getElementById('allRoundResults')
 const generateRound1FirstResults = document.getElementById('generateRound1FirstResults')
 const generateRound1SecondResults = document.getElementById('generateRound1SecondResults')
 const generateRound1ThirdResults = document.getElementById('generateRound1ThirdResults')
@@ -294,6 +295,7 @@ const generateRound4Results = document.getElementById('generateRound4Results')
 const generateRound5Results = document.getElementById('generateRound5Results')
 const generateRound6Results = document.getElementById('generateRound6Results')
 const generateSpeedRoundResults = document.getElementById('generateSpeedRoundResults')
+const generateAllRoundResults = document.getElementById('generateAllRoundResults')
 
 
 // EVENT LISTENERS--------------------------------------------------------------------------
@@ -308,6 +310,7 @@ generateRound4Results.addEventListener('click', renderRound4)
 generateRound5Results.addEventListener('click', renderRound5)
 generateRound6Results.addEventListener('click', renderRound6)
 generateSpeedRoundResults.addEventListener('click', renderSpeedRound)
+generateAllRoundResults.addEventListener('click', renderAllRounds)
 
 
 
@@ -349,4 +352,18 @@ function renderRound6(){
 }
 function renderSpeedRound(){
     speedRoundPrintHere.innerHTML = `Speed round is ${speedRound.combos[randomizeRound(speedRound)]}.`
+}
+
+function renderAllRounds(){
+
+    allRoundPrintHere.innerHTML = 
+    `The first part of round one is ${round1.combos[randomizeRound(round1)]}. <br />
+    The second part of round one is ${round1.combos[randomizeRound(round1)]}. <br />
+    The third part of round one is ${round1.combos[randomizeRound(round1)]}. <br />
+    Round two is ${round2.combos[randomizeRound(round2)]}. <br />
+    Round three is ${round3.combos[randomizeRound(round3)]}. <br />
+    Round four is ${round4.combos[randomizeRound(round4)]}. <br />
+    Round five is ${round5.combos[randomizeRound(round5)]}. <br />
+    Round six is ${round6.combos[randomizeRound(round6)]}. <br />
+    Speed round is ${speedRound.combos[randomizeRound(speedRound)]}.`
 }
