@@ -39,3 +39,20 @@ button{
     
    }
 
+   @media only screen and (min-device-width : 300px) and (max-device-width : 480px){
+body {
+    background-image: linear-gradient(to right top, #6c6e76, #60677b, #506180, #3b5b85, #14568a);
+}
+
+.renderRound {
+    display: block;
+    margin: 10px;
+}
+
+#allRoundResults {
+    padding: 10px;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+   }
