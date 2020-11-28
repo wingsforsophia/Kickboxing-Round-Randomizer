@@ -1,7 +1,16 @@
 // CONSTANTS--------------------------------------------------------------------------
 const round1 = {
     'punches': ['Jab', 'Cross'],
-    'combos': ['Jab-Jab-Cross', 'Jab-Cross-Cross', 'Jab-Jab-Cross-Cross', 'Jab-Cross 4 times fast, then reset', 'Jab-Cross, Jab-Jab-Cross-Cross']
+    'combos': ['10 Jab-Cross, 20 Jab-Cross... up to 50 Jab-Cross, then 5 burpees', 
+                'Jab-Cross',
+                'Jab-Cross-Cross',
+                'Jab-Jab-Cross-Cross',
+                'Jab-Jab-Cross',
+                '4 Jab-Cross, then reset',
+                'Jab-Cross-Body Cross',
+                'Body Jab-Jab-Cross',
+                'Jab-Cross-Jab-Cross, reset',
+                '']
 }
 
 const currentRound1 = []
@@ -25,8 +34,8 @@ generateRound1Results.addEventListener('click', renderRound1)
 
 
 // FUNCTIONS-------------------------------------------------------------------------------
-function randomizeRound1(){
-   return Math.floor(Math.random() * Math.floor(round1.combos.length))  
+function randomizeRound(round){
+   return Math.floor(Math.random() * Math.floor(round.combos.length))  
 }
 
 // function checkRound1(){
@@ -46,7 +55,7 @@ function randomizeRound1(){
 // render functions------
 
 function renderRound1(){
-    r1PrintHere.innerHTML = `The first round is ${round1.combos[randomizeRound1()]} for half, then ${round1.combos[randomizeRound1()]}.`
+    r1PrintHere.innerHTML = `The first round is ${round1.combos[randomizeRound(round1)]} for half, then ${round1.combos[randomizeRound(round1)]}.`
 }
 
 
