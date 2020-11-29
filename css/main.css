@@ -1,75 +1,47 @@
-body {
-    height: 100vh;
-    background-image: linear-gradient(to right top, #e2bfd3, #dcc0d9, #d5c1de, #ccc2e2, #c3c4e5, #bcc9ea, #b4cdee, #acd2f0, #a5daf3, #a1e3f4, #a1eaf1, #a6f1ec);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    font-size: 25px;
-}
 
-.disappear {
-    display: none;
-}
-
-.renderRound {
-    display: flex;
-    margin: 23px;
+html {
+    box-sizing: border-box
+  }
+  
+  /* The Universal Selector */
+  *, /* All elements*/
+  *::before, /* All ::before pseudo-elements */
+  *::after { /* All ::after pseudo-elements */
+    /* height & width will now include border & padding by default
+       but can be over-ridden as needed */
+    box-sizing: inherit;
+  }
+  
+  /* resets font size to be 62.5% of the user preference - 
+     in most browser configurations this will be 10px */
+  :root {
+    font-size: 62.5%
+  }
+  
+  body {
+    /* Use a system font, if none are available use an available sans-sarif   font */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    margin: 10%;
+    display: grid;
     align-items: center;
-}
+    justify-content: center;
+  }
 
-.printResults{
-    height: auto;
-    width: 80vw;
-}
-
-button{
-    background-image: linear-gradient(to right top, #869d80, #7a9177, #6f846d, #647864, #596c5b);
-    border-radius: 30px;
-    border: none;
-    -webkit-box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.49); 
-    box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.49);
-    padding: 12px;
-    width: 50%;
-}
-
-.printResults {
-    margin: 30px;
-    /* background-image: linear-gradient(to right top, #f4f3ea, #f4f3e1, #f3f4d8, #f0f4cf, #edf5c7); */
-    border-radius: 20px;
-    -webkit-box-shadow: 5px 5px 41px 5px rgba(0,0,0,0.77); 
-    box-shadow: 5px 5px 41px 5px rgba(0, 0, 0, 0.77);
-   }
-
-   #allRoundResults {
-    padding: 25px;
-    line-height: 180%;
-    
-   }
-h1{
+  h1 {
     color: transparent;
-background: #666666;
--webkit-background-clip: text;
--moz-background-clip: text;
-background-clip: text;
-text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+    font-size: 3.9rem;
+    text-align: center;
+  }
+
+button {
+
+width: 75%;
+height: 30px;
+
 }
-
-
-   @media only screen and (min-device-width : 300px) and (max-device-width : 480px){
-body {
-    background-image: none;
-    background-color: rgb(245, 243, 243);
-}
-
-.renderRound {
-    display: block;
-    margin: 10px;
-}
-
-#allRoundResults {
-    padding: 10px;
-    /* line-height: 35px; */
-    font-size: 20px;
-}
-
-   }
