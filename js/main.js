@@ -364,5 +364,5 @@ function renderAllRounds(){
     <b>R4:</b> ${round4.combos[randomizeRound(round4)]}<br />
     <b>R5: </b>${round5.combos[randomizeRound(round5)]}<br />
     <b>R6: </b>${round6.combos[randomizeRound(round6)]}<br />
-    <b>Speed: </b>${speedRound.combos[randomizeRound(speedRound)]}
+    <b>Speed: </b>${speedRound.combos[randomizeRound(speedRound)]}`
 }
