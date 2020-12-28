@@ -271,16 +271,15 @@ const speedRound = {
 }
 
 // CACHED ELEMENT REFERENCES-----------------------------------------------------------
-// const r1FirstPrintHere = document.getElementById('round1FirstResults')
-// const r1SecondPrintHere = document.getElementById('round1SecondResults')
-// const r1ThirdPrintHere = document.getElementById('round1ThirdResults')
-// const r2PrintHere = document.getElementById('round2Results')
-// const r3PrintHere = document.getElementById('round3Results')
-// const r4PrintHere = document.getElementById('round4Results')
-// const r5PrintHere = document.getElementById('round5Results')
-// const r6PrintHere = document.getElementById('round6Results')
-// const speedRoundPrintHere = document.getElementById('speedRoundResults')
-const allRoundPrintHere = document.getElementById('allRoundResults')
+const r1FirstPrintHere = document.getElementById('round1FirstResults')
+const r1SecondPrintHere = document.getElementById('round1SecondResults')
+const r2PrintHere = document.getElementById('round2Results')
+const r3PrintHere = document.getElementById('round3Results')
+const r4PrintHere = document.getElementById('round4Results')
+const r5PrintHere = document.getElementById('round5Results')
+const r6PrintHere = document.getElementById('round6Results')
+const speedRoundPrintHere = document.getElementById('speedRoundResults')
+// const allRoundPrintHere = document.getElementById('allRoundResults')
 // const generateRound1FirstResults = document.getElementById('generateRound1FirstResults')
 // const generateRound1SecondResults = document.getElementById('generateRound1SecondResults')
 // const generateRound1ThirdResults = document.getElementById('generateRound1ThirdResults')
@@ -321,43 +320,42 @@ function randomizeRound(round){
 // render functions------
 
 // function renderRound1First(){
-//     r1FirstPrintHere.inneRight-HookTML = `The first part of round one is ${round1.combos[randomizeRound(round1)]}.`
+//     r1FirstPrintHere.innerHTML = `The first part of round one is ${round1.combos[randomizeRound(round1)]}.`
 // }
 // function renderRound1Second(){
-//     r1SecondPrintHere.inneRight-HookTML = `The second part of round one is ${round1.combos[randomizeRound(round1)]}.`
+//     r1SecondPrintHere.innerHTML = `The second part of round one is ${round1.combos[randomizeRound(round1)]}.`
 // }
 // function renderRound1Third(){
-//     r1ThirdPrintHere.inneRight-HookTML = `The third part of round one is ${round1.combos[randomizeRound(round1)]}.`
+//     r1ThirdPrintHere.innerHTML = `The third part of round one is ${round1.combos[randomizeRound(round1)]}.`
 // }
 
 // function renderRound2(){
-//     r2PrintHere.inneRight-HookTML = `Round two is ${round2.combos[randomizeRound(round2)]}.`
+//     r2PrintHere.innerHTML = `Round two is ${round2.combos[randomizeRound(round2)]}.`
 // }
 // function renderRound3(){
-//     r3PrintHere.inneRight-HookTML = `Round three is ${round3.combos[randomizeRound(round3)]}.`
+//     r3PrintHere.innerHTML = `Round three is ${round3.combos[randomizeRound(round3)]}.`
 // }
 // function renderRound4(){
-//     r4PrintHere.inneRight-HookTML = `Round four is ${round4.combos[randomizeRound(round4)]}.`
+//     r4PrintHere.innerHTML = `Round four is ${round4.combos[randomizeRound(round4)]}.`
 // }
 // function renderRound5(){
-//     r5PrintHere.inneRight-HookTML = `Round five is ${round5.combos[randomizeRound(round5)]}.`
+//     r5PrintHere.innerHTML = `Round five is ${round5.combos[randomizeRound(round5)]}.`
 // }
 // function renderRound6(){
-//     r6PrintHere.inneRight-HookTML = `Round six is ${round6.combos[randomizeRound(round6)]}.`
+//     r6PrintHere.innerHTML = `Round six is ${round6.combos[randomizeRound(round6)]}.`
 // }
 // function renderSpeedRound(){
-//     speedRoundPrintHere.inneRight-HookTML = `Speed round is ${speedRound.combos[randomizeRound(speedRound)]}.`
+//     speedRoundPrintHere.innerHTML = `Speed round is ${speedRound.combos[randomizeRound(speedRound)]}.`
 // }
 
 function renderAllRounds(){
-
-    allRoundPrintHere.innerHTML = 
-    `<b>R1- first half:</b> ${round1.combos[randomizeRound(round1)]}<br />
-    <b>R1- second half:</b>${round1.combos[randomizeRound(round1)]}<br />
-    <b>R2:</b> ${round2.combos[randomizeRound(round2)]}<br />
-    <b>R3:</b> ${round3.combos[randomizeRound(round3)]}<br />
-    <b>R4:</b> ${round4.combos[randomizeRound(round4)]}<br />
-    <b>R5: </b>${round5.combos[randomizeRound(round5)]}<br />
-    <b>R6: </b>${round6.combos[randomizeRound(round6)]}<br />
-    <b>Speed: </b>${speedRound.combos[randomizeRound(speedRound)]}`
+    r1FirstPrintHere.innerHTML = `The first part of round one is ${round1.combos[randomizeRound(round1)]}.`
+    r1SecondPrintHere.innerHTML = `The second part of round one is ${round1.combos[randomizeRound(round1)]}.`
+    r2PrintHere.innerHTML = `Round two is ${round2.combos[randomizeRound(round2)]}.`
+    r3PrintHere.innerHTML = `Round three is ${round3.combos[randomizeRound(round3)]}.`
+    r4PrintHere.innerHTML = `Round four is ${round4.combos[randomizeRound(round4)]}.`
+    r5PrintHere.innerHTML = `Round five is ${round5.combos[randomizeRound(round5)]}.`
+    r6PrintHere.innerHTML = `Round six is ${round6.combos[randomizeRound(round6)]}.`
+    speedRoundPrintHere.innerHTML = `Speed round is ${speedRound.combos[randomizeRound(speedRound)]}.`
+ 
 }
