@@ -349,14 +349,14 @@ function randomizeRound(round){
 // }
 
 function renderAllRounds(){
-    r1FirstPrintHere.innerHTML = `The first part of round one is ${round1.combos[randomizeRound(round1)]}.`
+    r1FirstPrintHere.innerHTML = `<b>R1-1:</b> ${round1.combos[randomizeRound(round1)]}.`
 
-    r1SecondPrintHere.innerHTML = `The second part of round one is ${round1.combos[randomizeRound(round1)]}.`
-    r2PrintHere.innerHTML = `Round two is ${round2.combos[randomizeRound(round2)]}.`
-    r3PrintHere.innerHTML = `Round three is ${round3.combos[randomizeRound(round3)]}.`
-    r4PrintHere.innerHTML = `Round four is ${round4.combos[randomizeRound(round4)]}.`
-    r5PrintHere.innerHTML = `Round five is ${round5.combos[randomizeRound(round5)]}.`
-    r6PrintHere.innerHTML = `Round six is ${round6.combos[randomizeRound(round6)]}.`
-    speedRoundPrintHere.innerHTML = `Speed round is ${speedRound.combos[randomizeRound(speedRound)]}.`
+    r1SecondPrintHere.innerHTML = `<b>R1-2:</b> ${round1.combos[randomizeRound(round1)]}.`
+    r2PrintHere.innerHTML = `<b>R2:</b> ${round2.combos[randomizeRound(round2)]}.`
+    r3PrintHere.innerHTML = `<b>R3:</b> ${round3.combos[randomizeRound(round3)]}.`
+    r4PrintHere.innerHTML = `<b>R4:</b> ${round4.combos[randomizeRound(round4)]}.`
+    r5PrintHere.innerHTML = `<b>R5:</b> ${round5.combos[randomizeRound(round5)]}.`
+    r6PrintHere.innerHTML = `<b>R6:</b> ${round6.combos[randomizeRound(round6)]}.`
+    speedRoundPrintHere.innerHTML = `<b>Speed:</b> ${speedRound.combos[randomizeRound(speedRound)]}.`
  
 }
